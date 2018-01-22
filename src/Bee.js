@@ -8,4 +8,5 @@ var Bee = function() {
 
 };
 
-Bee.prototype.eat = Grub.prototype.eat;
+Bee.prototype = Object.create(Grub.prototype);
+Bee.prototype.constructor = Bee;
